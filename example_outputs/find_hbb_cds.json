@@ -1,0 +1,139 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "dna_sequence": ">NM_000518.5 HBB coding sequence (CDS 51..494), Homo sapiens hemoglobin subunit beta, wild type\nATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAG\nTTGGTGGTGAGGCCCTGGGCAGGCTGCTGGTGGTCTACCCTTGGACCCAGAGGTTCTTTGAGTCCTTTGG\nGGATCTGTCCACTCCTGATGCTGTTATGGGCAACCCTAAGGTGAAGGCTCATGGCAAGAAAGTGCTCGGT\nGCCTTTAGTGATGGCCTGGCTCACCTGGACAACCTCAAGGGCACCTTTGCCACACTGAGTGAGCTGCACT\nGTGACAAGCTGCACGTGGATCCTGAGAACTTCAGGCTCCTGGGCAACGTGCTGGTCTGTGTGCTGGCCCA\nTCACTTTGGCAAAGAATTCACCCCACCAGTGCAGGCTGCCTATCAGAAAGTGGTGGCTGGTGTGGCTAAT\nGCCCTGGCCCACAAGTATCACTAA\n",
+    "taxon_id": 9606
+  },
+  "isError": false,
+  "structuredContent": {
+    "ok": true,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": null,
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [
+        "https://alphafold.ebi.ac.uk/api/sequence/summary?id=209d686939d0b8d1ea089368150140e2&type=md5",
+        "https://rest.uniprot.org/uniprotkb/accessions?accessions=P68873%2CP68872%2CP68871&fields=accession%2Creviewed%2Corganism_name%2Corganism_id%2Cgene_primary%2Cprotein_name%2Clength&format=json"
+      ],
+      "retrieved_at": "2026-10-26T18:08:07+00:00",
+      "elapsed_ms": 3,
+      "replay_mode": true
+    },
+    "data": {
+      "query": {
+        "input_characters": 547,
+        "nucleotide_length": 444,
+        "gc_fraction": 0.5608,
+        "ambiguous_bases": 0,
+        "was_rna": false
+      },
+      "translation": {
+        "reading_frame": "+1",
+        "strand": "+",
+        "nt_start": 1,
+        "nt_end": 444,
+        "protein_length": 147,
+        "has_start_codon": true,
+        "has_stop_codon": true,
+        "protein_sequence": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+        "protein_md5": "209d686939d0b8d1ea089368150140e2",
+        "unknown_residues": 0
+      },
+      "alternative_orfs": [
+        {
+          "reading_frame": "-1",
+          "strand": "-",
+          "nt_start": 1,
+          "nt_end": 351,
+          "protein_length": 117,
+          "has_start_codon": true,
+          "has_stop_codon": false
+        },
+        {
+          "reading_frame": "+2",
+          "strand": "+",
+          "nt_start": 65,
+          "nt_end": 184,
+          "protein_length": 39,
+          "has_start_codon": true,
+          "has_stop_codon": true
+        }
+      ],
+      "match_status": "exact_match",
+      "total_matches": 3,
+      "matches": [
+        {
+          "model_id": "AF-P68871-F1",
+          "uniprot_accession": "P68871",
+          "protein_name": "Hemoglobin subunit beta",
+          "gene": "HBB",
+          "organism": "Homo sapiens",
+          "taxon_id": 9606,
+          "reviewed": true,
+          "taxon_match": true,
+          "oligomeric_state": "MONOMER",
+          "mean_plddt": 97.19,
+          "sequence_identity": 1.0,
+          "coverage": 1.0,
+          "model_url": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.cif",
+          "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-P68871-F1",
+          "created": "2025-08-01"
+        },
+        {
+          "model_id": "AF-P68873-F1",
+          "uniprot_accession": "P68873",
+          "protein_name": "Hemoglobin subunit beta",
+          "gene": "HBB",
+          "organism": "Pan troglodytes",
+          "taxon_id": 9598,
+          "reviewed": true,
+          "taxon_match": false,
+          "oligomeric_state": "MONOMER",
+          "mean_plddt": 96.94,
+          "sequence_identity": 1.0,
+          "coverage": 1.0,
+          "model_url": "https://alphafold.ebi.ac.uk/files/AF-P68873-F1-model_v6.cif",
+          "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-P68873-F1",
+          "created": "2025-08-01"
+        },
+        {
+          "model_id": "AF-P68872-F1",
+          "uniprot_accession": "P68872",
+          "protein_name": "Hemoglobin subunit beta",
+          "gene": "HBB",
+          "organism": "Pan paniscus",
+          "taxon_id": 9597,
+          "reviewed": true,
+          "taxon_match": false,
+          "oligomeric_state": "MONOMER",
+          "mean_plddt": 96.88,
+          "sequence_identity": 1.0,
+          "coverage": 1.0,
+          "model_url": "https://alphafold.ebi.ac.uk/files/AF-P68872-F1-model_v6.cif",
+          "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-P68872-F1",
+          "created": "2025-08-01"
+        }
+      ],
+      "best_match": {
+        "model_id": "AF-P68871-F1",
+        "uniprot_accession": "P68871",
+        "protein_name": "Hemoglobin subunit beta",
+        "gene": "HBB",
+        "organism": "Homo sapiens",
+        "taxon_id": 9606,
+        "reviewed": true,
+        "taxon_match": true,
+        "oligomeric_state": "MONOMER",
+        "mean_plddt": 97.19,
+        "sequence_identity": 1.0,
+        "coverage": 1.0,
+        "model_url": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.cif",
+        "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-P68871-F1",
+        "created": "2025-08-01"
+      },
+      "next_step": "Call compare_sequence_to_alphafold with uniprot_accession='P68871' to get the pLDDT confidence profile and model files for this protein."
+    }
+  }
+}

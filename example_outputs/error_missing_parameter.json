@@ -1,0 +1,35 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "reading_frame": "+1"
+  },
+  "isError": true,
+  "structuredContent": {
+    "ok": false,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "Missing required argument(s): dna_sequence. Invalid arguments - dna_sequence: Field required.",
+      "retryable": false,
+      "details": {
+        "problems": [
+          {
+            "field": "dna_sequence",
+            "problem": "Field required",
+            "type": "missing"
+          }
+        ]
+      }
+    },
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 0,
+      "replay_mode": true
+    },
+    "data": null
+  }
+}

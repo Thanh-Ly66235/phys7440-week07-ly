@@ -1,0 +1,105 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "dna_sequence": ">NM_000518.5 HBB CDS with c.20A>T (GAG>GTG, p.Glu7Val; HbS 'E6V' in mature-chain numbering), sickle-cell allele\nATGGTGCATCTGACTCCTGTGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAG\nTTGGTGGTGAGGCCCTGGGCAGGCTGCTGGTGGTCTACCCTTGGACCCAGAGGTTCTTTGAGTCCTTTGG\nGGATCTGTCCACTCCTGATGCTGTTATGGGCAACCCTAAGGTGAAGGCTCATGGCAAGAAAGTGCTCGGT\nGCCTTTAGTGATGGCCTGGCTCACCTGGACAACCTCAAGGGCACCTTTGCCACACTGAGTGAGCTGCACT\nGTGACAAGCTGCACGTGGATCCTGAGAACTTCAGGCTCCTGGGCAACGTGCTGGTCTGTGTGCTGGCCCA\nTCACTTTGGCAAAGAATTCACCCCACCAGTGCAGGCTGCCTATCAGAAAGTGGTGGCTGGTGTGGCTAAT\nGCCCTGGCCCACAAGTATCACTAA\n",
+    "taxon_id": 9606
+  },
+  "isError": false,
+  "structuredContent": {
+    "ok": true,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": null,
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [
+        "https://alphafold.ebi.ac.uk/api/sequence/summary?id=05bfe00d04d6090866a9c66fa0a15b63&type=md5",
+        "https://rest.uniprot.org/uniprotkb/accessions?accessions=A0A481SHK9&fields=accession%2Creviewed%2Corganism_name%2Corganism_id%2Cgene_primary%2Cprotein_name%2Clength&format=json"
+      ],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 2,
+      "replay_mode": true
+    },
+    "data": {
+      "query": {
+        "input_characters": 563,
+        "nucleotide_length": 444,
+        "gc_fraction": 0.5608,
+        "ambiguous_bases": 0,
+        "was_rna": false
+      },
+      "translation": {
+        "reading_frame": "+1",
+        "strand": "+",
+        "nt_start": 1,
+        "nt_end": 444,
+        "protein_length": 147,
+        "has_start_codon": true,
+        "has_stop_codon": true,
+        "protein_sequence": "MVHLTPVEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+        "protein_md5": "05bfe00d04d6090866a9c66fa0a15b63",
+        "unknown_residues": 0
+      },
+      "alternative_orfs": [
+        {
+          "reading_frame": "-1",
+          "strand": "-",
+          "nt_start": 1,
+          "nt_end": 351,
+          "protein_length": 117,
+          "has_start_codon": true,
+          "has_stop_codon": false
+        },
+        {
+          "reading_frame": "+2",
+          "strand": "+",
+          "nt_start": 65,
+          "nt_end": 184,
+          "protein_length": 39,
+          "has_start_codon": true,
+          "has_stop_codon": true
+        }
+      ],
+      "match_status": "exact_match",
+      "total_matches": 1,
+      "matches": [
+        {
+          "model_id": "AF-A0A481SHK9-F1",
+          "uniprot_accession": "A0A481SHK9",
+          "protein_name": "Hemoglobin subunit beta",
+          "gene": "HBB",
+          "organism": "Homo sapiens",
+          "taxon_id": 9606,
+          "reviewed": false,
+          "taxon_match": true,
+          "oligomeric_state": "MONOMER",
+          "mean_plddt": 96.56,
+          "sequence_identity": 1.0,
+          "coverage": 1.0,
+          "model_url": "https://alphafold.ebi.ac.uk/files/AF-A0A481SHK9-F1-model_v6.cif",
+          "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-A0A481SHK9-F1",
+          "created": "2022-06-01"
+        }
+      ],
+      "best_match": {
+        "model_id": "AF-A0A481SHK9-F1",
+        "uniprot_accession": "A0A481SHK9",
+        "protein_name": "Hemoglobin subunit beta",
+        "gene": "HBB",
+        "organism": "Homo sapiens",
+        "taxon_id": 9606,
+        "reviewed": false,
+        "taxon_match": true,
+        "oligomeric_state": "MONOMER",
+        "mean_plddt": 96.56,
+        "sequence_identity": 1.0,
+        "coverage": 1.0,
+        "model_url": "https://alphafold.ebi.ac.uk/files/AF-A0A481SHK9-F1-model_v6.cif",
+        "model_page_url": "https://alphafold.ebi.ac.uk/entry/AF-A0A481SHK9-F1",
+        "created": "2022-06-01"
+      },
+      "next_step": "Call compare_sequence_to_alphafold with uniprot_accession='A0A481SHK9' to get the pLDDT confidence profile and model files for this protein."
+    }
+  }
+}

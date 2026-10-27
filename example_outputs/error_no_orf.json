@@ -1,0 +1,38 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "dna_sequence": "TTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAGTTAG"
+  },
+  "isError": true,
+  "structuredContent": {
+    "ok": false,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": {
+      "code": "NO_ORF_FOUND",
+      "message": "No open reading frame of >= 30 codons in frame(s) +1, +2, +3, -1, -2, -3; the longest stop-free stretch is 3 codons. Check that this is coding sequence (not intronic or UTR), try another reading_frame, or lower min_protein_length.",
+      "retryable": false,
+      "details": {
+        "frames_searched": [
+          "+1",
+          "+2",
+          "+3",
+          "-1",
+          "-2",
+          "-3"
+        ],
+        "longest_stop_free_codons": 3,
+        "min_protein_length": 30
+      }
+    },
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 0,
+      "replay_mode": true
+    },
+    "data": null
+  }
+}

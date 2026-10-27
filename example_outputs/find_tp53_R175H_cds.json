@@ -1,0 +1,79 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "dna_sequence": ">NM_000546.6 TP53 CDS with c.524G>A (CGC>CAC, p.Arg175His), common cancer hotspot\nATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGA\nAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCC\nGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATGCCAGAGGCTGCT\nCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGT\nCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGG\nGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACC\nTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACA\nAGCAGTCACAGCACATGACGGAGGTTGTGAGGCACTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGG\nTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAAC\nACTTTTCGACATAGTGTGGTGGTGCCCTATGAGCCGCCTGAGGTTGGCTCTGACTGTACCACCATCCACT\nACAACTACATGTGTAACAGTTCCTGCATGGGCGGCATGAACCGGAGGCCCATCCTCACCATCATCACACT\nGGAAGACTCCAGTGGTAATCTACTGGGACGGAACAGCTTTGAGGTGCGTGTTTGTGCCTGTCCTGGGAGA\nGACCGGCGCACAGAGGAAGAGAATCTCCGCAAGAAAGGGGAGCCTCACCACGAGCTGCCCCCAGGGAGCA\nCTAAGCGAGCACTGCCCAACAACACCAGCTCCTCTCCCCAGCCAAAGAAGAAACCACTGGATGGAGAATA\nTTTCACCCTTCAGATCCGTGGGCGTGAGCGCTTCGAGATGTTCCGAGAGCTGAATGAGGCCTTGGAACTC\nAAGGATGCCCAGGCTGGGAAGGAGCCAGGGGGGAGCAGGGCTCACTCCAGCCACCTGAAGTCCAAAAAGG\nGTCAGTCTACCTCCCGCCATAAAAAACTCATGTTCAAGACAGAAGGGCCTGACTCAGACTGA\n",
+    "taxon_id": 9606
+  },
+  "isError": false,
+  "structuredContent": {
+    "ok": true,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": null,
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [
+        "https://alphafold.ebi.ac.uk/api/sequence/summary?id=c8c0bdbd92a3bcebcc024a2103dc65cf&type=md5"
+      ],
+      "retrieved_at": "2026-10-26T18:08:04+00:00",
+      "elapsed_ms": 2,
+      "replay_mode": true
+    },
+    "data": {
+      "query": {
+        "input_characters": 1281,
+        "nucleotide_length": 1182,
+        "gc_fraction": 0.5677,
+        "ambiguous_bases": 0,
+        "was_rna": false
+      },
+      "translation": {
+        "reading_frame": "+1",
+        "strand": "+",
+        "nt_start": 1,
+        "nt_end": 1182,
+        "protein_length": 393,
+        "has_start_codon": true,
+        "has_stop_codon": true,
+        "protein_sequence": "MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRHCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD",
+        "protein_md5": "c8c0bdbd92a3bcebcc024a2103dc65cf",
+        "unknown_residues": 0
+      },
+      "alternative_orfs": [
+        {
+          "reading_frame": "-1",
+          "strand": "-",
+          "nt_start": 790,
+          "nt_end": 1140,
+          "protein_length": 116,
+          "has_start_codon": true,
+          "has_stop_codon": true
+        },
+        {
+          "reading_frame": "+2",
+          "strand": "+",
+          "nt_start": 536,
+          "nt_end": 739,
+          "protein_length": 67,
+          "has_start_codon": true,
+          "has_stop_codon": true
+        },
+        {
+          "reading_frame": "+2",
+          "strand": "+",
+          "nt_start": 182,
+          "nt_end": 367,
+          "protein_length": 61,
+          "has_start_codon": true,
+          "has_stop_codon": true
+        }
+      ],
+      "match_status": "no_exact_match",
+      "total_matches": 0,
+      "matches": [],
+      "best_match": null,
+      "next_step": "No identical AlphaFold model. If you know the gene, find its wild-type UniProt accession and call compare_sequence_to_alphafold(uniprot_accession=..., query_sequence=<translation.protein_sequence>) to see which residues differ and how confident the model is there."
+    }
+  }
+}

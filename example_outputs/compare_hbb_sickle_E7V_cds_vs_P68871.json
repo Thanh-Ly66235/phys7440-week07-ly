@@ -1,0 +1,128 @@
+{
+  "tool": "compare_sequence_to_alphafold",
+  "arguments": {
+    "uniprot_accession": "P68871",
+    "query_sequence": ">NM_000518.5 HBB CDS with c.20A>T (GAG>GTG, p.Glu7Val; HbS 'E6V' in mature-chain numbering), sickle-cell allele\nATGGTGCATCTGACTCCTGTGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAG\nTTGGTGGTGAGGCCCTGGGCAGGCTGCTGGTGGTCTACCCTTGGACCCAGAGGTTCTTTGAGTCCTTTGG\nGGATCTGTCCACTCCTGATGCTGTTATGGGCAACCCTAAGGTGAAGGCTCATGGCAAGAAAGTGCTCGGT\nGCCTTTAGTGATGGCCTGGCTCACCTGGACAACCTCAAGGGCACCTTTGCCACACTGAGTGAGCTGCACT\nGTGACAAGCTGCACGTGGATCCTGAGAACTTCAGGCTCCTGGGCAACGTGCTGGTCTGTGTGCTGGCCCA\nTCACTTTGGCAAAGAATTCACCCCACCAGTGCAGGCTGCCTATCAGAAAGTGGTGGCTGGTGTGGCTAAT\nGCCCTGGCCCACAAGTATCACTAA\n",
+    "query_type": "dna"
+  },
+  "isError": false,
+  "structuredContent": {
+    "ok": true,
+    "tool": "compare_sequence_to_alphafold",
+    "warnings": [],
+    "error": null,
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [
+        "https://alphafold.ebi.ac.uk/api/prediction/P68871",
+        "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-confidence_v6.json",
+        "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-aa-substitutions.csv"
+      ],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 4,
+      "replay_mode": true
+    },
+    "data": {
+      "model": {
+        "entry_id": "AF-P68871-F1",
+        "uniprot_accession": "P68871",
+        "uniprot_id": "HBB_HUMAN",
+        "gene": "HBB",
+        "protein_name": "Hemoglobin subunit beta",
+        "organism": "Homo sapiens",
+        "taxon_id": 9606,
+        "reviewed": true,
+        "model_version": 6,
+        "model_created": "2025-08-01T00:00:00Z",
+        "tool_used": "AlphaFold Monomer v2.0 pipeline",
+        "provider": "GDM",
+        "sequence_length": 147,
+        "model_start": 1,
+        "model_end": 147,
+        "afdb_reported_mean_plddt": 97.19,
+        "urls": {
+          "entry_page": "https://alphafold.ebi.ac.uk/entry/P68871",
+          "pdb": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.pdb",
+          "cif": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.cif",
+          "plddt_json": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-confidence_v6.json",
+          "pae_json": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-predicted_aligned_error_v6.json",
+          "pae_image": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-predicted_aligned_error_v6.png",
+          "alphamissense_csv": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-aa-substitutions.csv"
+        },
+        "other_models_for_accession": []
+      },
+      "confidence": {
+        "mean_plddt": 97.18,
+        "median_plddt": 98.12,
+        "min_plddt": 61.09,
+        "max_plddt": 98.94,
+        "fraction_very_high": 0.973,
+        "fraction_confident": 0.02,
+        "fraction_low": 0.007,
+        "fraction_very_low": 0.0,
+        "threshold": 70.0,
+        "fraction_above_threshold": 0.993,
+        "confident_segments": [
+          {
+            "start": 2,
+            "end": 147,
+            "length": 146,
+            "mean_plddt": 97.42
+          }
+        ],
+        "disordered_segments": [],
+        "interpretation": "Mean pLDDT 97.2 (very high: backbone and most side chains are expected to be accurate). 99% of residues have pLDDT >= 70; confident segment(s): 2-147."
+      },
+      "per_residue_plddt": null,
+      "comparison": {
+        "query_source": "dna",
+        "query_length": 147,
+        "translation": {
+          "reading_frame": "+1",
+          "strand": "+",
+          "nt_start": 1,
+          "nt_end": 444,
+          "protein_length": 147,
+          "has_start_codon": true,
+          "has_stop_codon": true,
+          "protein_sequence": "MVHLTPVEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+          "protein_md5": "05bfe00d04d6090866a9c66fa0a15b63",
+          "unknown_residues": 0
+        },
+        "alignment_method": "Biopython PairwiseAligner, BLOSUM62, gap open -10 / extend -0.5, free end gaps (semi-global)",
+        "alignment_score": 773.0,
+        "aligned_pairs": 147,
+        "identical": 146,
+        "identity": 0.9932,
+        "similarity": 0.9932,
+        "query_coverage": 1.0,
+        "model_coverage": 1.0,
+        "n_substitutions": 1,
+        "n_insertions": 0,
+        "n_deletions": 0,
+        "substitutions": [
+          {
+            "variant": "E7V",
+            "model_position": 7,
+            "query_position": 7,
+            "reference_residue": "E",
+            "query_residue": "V",
+            "blosum62": -2,
+            "plddt": 96.56,
+            "plddt_band": "very_high",
+            "alphamissense_pathogenicity": 0.2229,
+            "alphamissense_class": "likely_benign"
+          }
+        ],
+        "indels": [],
+        "lists_truncated": false,
+        "mean_plddt_aligned_region": 97.18,
+        "mean_plddt_at_substitutions": 96.56,
+        "structure_transfer_confidence": "high",
+        "interpretation": "Query is 99.3% identical to AF-P68871-F1 over 147 aligned residues (100% of the query, 100% of the model). 1 substitution(s), 0 insertion(s), 0 deletion(s). E7V at pLDDT 96.6 (very_high), AlphaMissense 0.223 (likely_benign). Structure-transfer confidence: high - the model can be used as the structure of the query (point changes are not modelled explicitly). Caveat: single-chain AlphaFold models do not capture changes in oligomerisation, ligand binding or aggregation."
+      },
+      "next_step": "Inspect the listed positions in https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.pdb; for a mutant-specific structure, run AlphaFold/ColabFold on the query sequence and superimpose it on this model."
+    }
+  }
+}

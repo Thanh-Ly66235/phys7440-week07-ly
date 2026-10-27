@@ -1,0 +1,106 @@
+{
+  "description": "Recorded HTTP responses used by the offline (replay) mode of mcp_server_ly.py and by the offline tests. Payloads were captured from the live AlphaFold DB API (v6 models) and the UniProt REST API on 2026-10-26; large responses were trimmed, and a few records were rebuilt in the exact API format from the captured values (AF-P68872-F1 summary fields other than id/score, and the HBB/TP53 confidenceCategory arrays, which are derived from the captured scores with AFDB's H>=90/M>=70/L>=50 rule). Trimmed: sequence-summary hit lists, UniProt lineages; the UniProt file merges the records of the HBB and TP53 accession queries, AlphaMissense tables reduced to the residues used in the examples. Routes are matched on host + path (+ query subset); the most specific match wins. Any URL without a route raises a connection error (reported by the server as UPSTREAM_UNAVAILABLE), so replay mode never invents data it did not record.",
+  "captured": "2026-10-26",
+  "routes": [
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/prediction/P68871",
+      "file": "afdb/prediction_P68871.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/prediction/P04637",
+      "file": "afdb/prediction_P04637.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/prediction/O00000",
+      "status": 404,
+      "body": {}
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/prediction/A0A0A0A0A0",
+      "status": 404,
+      "body": {}
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/files/AF-P68871-F1-confidence_v6.json",
+      "file": "afdb/confidence_P68871.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/files/AF-P04637-F1-confidence_v6.json",
+      "file": "afdb/confidence_P04637.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/files/AF-P68871-F1-aa-substitutions.csv",
+      "file": "afdb/am_P68871.csv",
+      "content_type": "text/csv"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/files/AF-P04637-F1-aa-substitutions.csv",
+      "file": "afdb/am_P04637.csv",
+      "content_type": "text/csv"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/sequence/summary",
+      "query": {
+        "type": "md5",
+        "id": "209d686939d0b8d1ea089368150140e2"
+      },
+      "file": "afdb/seqsummary_209d686939d0b8d1ea089368150140e2.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/sequence/summary",
+      "query": {
+        "type": "md5",
+        "id": "05bfe00d04d6090866a9c66fa0a15b63"
+      },
+      "file": "afdb/seqsummary_05bfe00d04d6090866a9c66fa0a15b63.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/sequence/summary",
+      "query": {
+        "type": "md5",
+        "id": "c133dfce69f606f20865e9008199f852"
+      },
+      "file": "afdb/seqsummary_c133dfce69f606f20865e9008199f852.json"
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/sequence/summary",
+      "query": {
+        "type": "md5",
+        "id": "c8c0bdbd92a3bcebcc024a2103dc65cf"
+      },
+      "status": 404,
+      "body": {
+        "message": "No results found for md5 : id=c8c0bdbd92a3bcebcc024a2103dc65cf, checksum=c8c0bdbd92a3bcebcc024a2103dc65cf"
+      }
+    },
+    {
+      "host": "alphafold.ebi.ac.uk",
+      "path": "/api/sequence/summary",
+      "query": {
+        "type": "md5",
+        "id": "70d8a8fdae6548cbe977ddfb131a7b4a"
+      },
+      "status": 404,
+      "body": {
+        "message": "No results found for md5 : id=70d8a8fdae6548cbe977ddfb131a7b4a, checksum=70d8a8fdae6548cbe977ddfb131a7b4a"
+      }
+    },
+    {
+      "host": "rest.uniprot.org",
+      "path": "/uniprotkb/accessions",
+      "file": "uniprot/accessions.json"
+    }
+  ]
+}

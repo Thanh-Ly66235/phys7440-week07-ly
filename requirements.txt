@@ -1,0 +1,10 @@
+# Runtime
+mcp==2.3.0           # official MCP Python SDK, pinned exactly (MCPServer API, v2)
+httpx>=0.27,<1       # async HTTP client for AlphaFold DB / UniProt
+biopython>=1.84      # translation + BLOSUM62 pairwise alignment
+pydantic>=2.11,<3    # input/output schemas
+
+# Tests
+pytest>=8
+anyio>=4.5           # provides the pytest plugin used by the async tests
+jsonschema>=4.20     # validates tool outputs against the advertised outputSchema

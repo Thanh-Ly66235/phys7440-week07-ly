@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "afdb-sequence": {
+      "command": "/home/thanhly/Downloads/Assignment 7/.venv/bin/python",
+      "args": ["/home/thanhly/Downloads/Assignment 7/mcp_server_ly.py"],
+      "env": {
+        "AFMCP_HTTP_TIMEOUT": "20",
+        "AFMCP_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

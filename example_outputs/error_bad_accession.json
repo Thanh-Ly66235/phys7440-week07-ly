@@ -1,0 +1,35 @@
+{
+  "tool": "compare_sequence_to_alphafold",
+  "arguments": {
+    "uniprot_accession": "HBB_HUMAN!"
+  },
+  "isError": true,
+  "structuredContent": {
+    "ok": false,
+    "tool": "compare_sequence_to_alphafold",
+    "warnings": [],
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "Invalid arguments - uniprot_accession: must be a UniProtKB accession such as P68871, P69905 or P04637-2 (not a gene or entry name like HBB_HUMAN).",
+      "retryable": false,
+      "details": {
+        "problems": [
+          {
+            "field": "uniprot_accession",
+            "problem": "must be a UniProtKB accession such as P68871, P69905 or P04637-2 (not a gene or entry name like HBB_HUMAN)",
+            "type": "string_pattern_mismatch"
+          }
+        ]
+      }
+    },
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 2,
+      "replay_mode": true
+    },
+    "data": null
+  }
+}

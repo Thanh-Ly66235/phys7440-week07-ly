@@ -1,0 +1,71 @@
+{
+  "tool": "find_alphafold_models_for_dna",
+  "arguments": {
+    "dna_sequence": "THIS IS NOT A DNA SEQUENCE AT ALL!!"
+  },
+  "isError": true,
+  "structuredContent": {
+    "ok": false,
+    "tool": "find_alphafold_models_for_dna",
+    "warnings": [],
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "dna_sequence contains characters that are not nucleotides (allowed: A C G T/U and IUPAC codes N R Y S W K M B D H V).",
+      "retryable": false,
+      "details": {
+        "field": "dna_sequence",
+        "invalid_characters": [
+          {
+            "position": 3,
+            "character": "I"
+          },
+          {
+            "position": 5,
+            "character": "I"
+          },
+          {
+            "position": 8,
+            "character": "O"
+          },
+          {
+            "position": 15,
+            "character": "E"
+          },
+          {
+            "position": 16,
+            "character": "Q"
+          },
+          {
+            "position": 18,
+            "character": "E"
+          },
+          {
+            "position": 21,
+            "character": "E"
+          },
+          {
+            "position": 25,
+            "character": "L"
+          },
+          {
+            "position": 26,
+            "character": "L"
+          },
+          {
+            "position": 27,
+            "character": "!"
+          }
+        ]
+      }
+    },
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 0,
+      "replay_mode": true
+    },
+    "data": null
+  }
+}

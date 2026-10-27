@@ -1,0 +1,32 @@
+{
+  "tool": "compare_sequence_to_alphafold",
+  "arguments": {
+    "uniprot_accession": "O00000"
+  },
+  "isError": true,
+  "structuredContent": {
+    "ok": false,
+    "tool": "compare_sequence_to_alphafold",
+    "warnings": [],
+    "error": {
+      "code": "NOT_FOUND",
+      "message": "AlphaFold DB has no model for UniProt accession O00000. Check the accession, or use find_alphafold_models_for_dna to search by sequence.",
+      "retryable": false,
+      "details": {
+        "uniprot_accession": "O00000",
+        "status": 404
+      }
+    },
+    "provenance": {
+      "server": "afdb-sequence-mcp",
+      "server_version": "1.0.0",
+      "sources": [
+        "https://alphafold.ebi.ac.uk/api/prediction/O00000"
+      ],
+      "retrieved_at": "2026-10-26T18:08:16+00:00",
+      "elapsed_ms": 0,
+      "replay_mode": true
+    },
+    "data": null
+  }
+}
